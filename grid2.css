@@ -84,12 +84,6 @@ nav a:hover {
     display: block;
 }
 
-[id^=tab]:target ~ li {
-    border: red solid 2px;
-}
-
-
-
 
 
 /*設定tabs的內容樣式*/
