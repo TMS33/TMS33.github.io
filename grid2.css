@@ -56,12 +56,13 @@ nav a:hover {
 
 .tab li{
     width: calc(100% / 3);
+    font-size: 28px;
+    text-decoration: none;
     text-align: center;
     line-height: 50px;
     background-color: #CCFFF9;
     border-radius: 50px 15px; 
     float:left;
-    border: white solid 2px;
     margin: 3% 0% 1% 0%;
 }
 
@@ -69,12 +70,10 @@ nav a:hover {
     background-color: #FFC7BF;
 }
 
-.tab a{
-    font-size: 30px;
-    color: white;
+.tab a {
     text-decoration: none;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+    color: white;
+    border-radius: 50px 15px;
 }
 
 [id^=tab] {
@@ -84,6 +83,13 @@ nav a:hover {
 [id^=tab]:target {
     display: block;
 }
+
+[id^=tab]:target ~ li {
+    border: red solid 2px;
+}
+
+
+
 
 
 /*設定tabs的內容樣式*/
